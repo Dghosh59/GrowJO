@@ -3,7 +3,19 @@
 This web application allows users to **upload a CSV of Growjo dataset**, compute **lead scores** using a machine learning model, and optionally **rank companies based on keyword similarity** (e.g., "AI machine learning"). It's built using **Flask**, with support for filtering and pagination.
 
 ---
+Lead Score – How Good Is the Company?
+What it is: A percentage (0–100%) that shows how strong or valuable a company is as a business lead.
 
+How it works: A machine learning model looks at company data (like funding, size, growth) and gives each company a score.
+
+Why it helps: It helps you focus on top companies first instead of wasting time on low-potential ones.
+
+Similarity Score – How Relevant Is the Company?
+What it is: A score (0–1) that shows how closely a company matches your keyword or interest.
+
+How it works: It compares your search term (like “AI marketing”) to each company’s description using AI and text comparison.
+
+Why it helps: You find companies that are doing exactly what you’re looking for, even if they are labeled differently.
 ## 🔍 Features
 
 - 📊 **Lead Scoring**: Predicts potential value of each company using a trained ML model (`lead_score_model.pkl`).
